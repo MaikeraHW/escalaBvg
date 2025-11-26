@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
 
@@ -253,7 +253,7 @@
 
         <section class="rescue">
         <div class="equipes">
-            <h2 class="RescueTitle">Resgate Veicular</h2>
+            <h2 class="RescueTitle">Trem de Socorro</h2>
             <article class="guarnicao-ucir">
             <h3 class="equipeName-ucir">UCIR</h3>
             <div class="div-bombeiro">
@@ -308,9 +308,10 @@
             </div>
         </article>
         <article class="guarnicao-ucir">
-            <h3 class="equipeName-ucir">UR 01</h3>
+            <h3 class="equipeName-ucir">1ª UR</h3>
             <div class="div-bombeiro">
                 <div class="bombeiroInput">
+                    <label for="ur01s1">Condutor</label>
                     <input type="text" name="ur01s1" id="ur01s1" class="bombeiro" disabled>
                 </div>
                 <div class="buttons">
@@ -320,6 +321,7 @@
             </div>
             <div class="div-bombeiro">
                 <div class="bombeiroInput">
+                    <label for="ur01s2">Socorrista S1</label>
                     <input type="text" name="ur01s2" id="ur01s2" class="bombeiro" disabled>
                 </div>
                 <div class="buttons">
@@ -329,6 +331,7 @@
             </div>
             <div class="div-bombeiro">
                 <div class="bombeiroInput">
+                    <label for="ur01s3">Socorrista S2</label>
                     <input type="text" name="ur01s3" id="ur01s3" class="bombeiro" disabled>
                 </div>
                 <div class="buttons">
@@ -338,6 +341,7 @@
             </div>
             <div class="div-bombeiro">
                 <div class="bombeiroInput">
+                    <label for="ur01s4">Socorrista S3</label>
                     <input type="text" name="ur01s4" id="ur01s4" class="bombeiro" disabled>
                 </div>
                 <div class="buttons">
@@ -345,8 +349,9 @@
                     <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
                 </div>
             </div>
-            <div class="div-bombeiro">
+            <div class="div-bombeiro oculto">
                 <div class="bombeiroInput">
+                    <label for="ur01s5">Socorrista Aluno</label>
                     <input type="text" name="ur01s5" id="ur01s5" class="bombeiro" disabled>
                 </div>
                 <div class="buttons">
@@ -356,7 +361,7 @@
             </div>
         </article>
         <article class="guarnicao-ucir">
-            <h3 class="equipeName-ucir">UR 02</h3>
+            <h3 class="equipeName-ucir">2ª UR</h3>
             <div class="div-bombeiro">
                 <div class="bombeiroInput">
                     <input type="text" name="ur02s1" id="ur02s1" class="bombeiro" disabled>
@@ -393,9 +398,9 @@
                     <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
                 </div>
             </div>
-            <div class="div-bombeiro">
+            <div class="div-bombeiro oculto">
                 <div class="bombeiroInput">
-                    <input type="text" name="ur02s5" id="ur02s5" class="bombeiro" disabled>
+                    <input type="text" name="ur01s5" id="ur01s5" class="bombeiro" disabled>
                 </div>
                 <div class="buttons">
                     <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
@@ -411,8 +416,7 @@
     <!---INCÊNDIO-->
 
         <section class="rescue">
-        <div class="equipes">
-            <h2 class="RescueTitle">Combate á incêndio</h2>
+        <div class="equipes-uci">
             <article class="guarnicao-ucir">
             <h3 class="equipeName-ucir">UCI</h3>
             <div class="div-bombeiro">
@@ -439,26 +443,6 @@
                 <div class="bombeiroInput">
                     <label for="rescue2">Combatente 2</label>
                     <input type="text" name="fire2" id="fire2" class="bombeiro" disabled>
-                </div>
-                <div class="buttons">
-                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
-                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
-                </div>
-            </div>
-            <div class="div-bombeiro">
-                <div class="bombeiroInput">
-                    <label for="rescue3">Combatente 3</label>
-                    <input type="text" name="fire3" id="fire3" class="bombeiro" disabled>
-                </div>
-                <div class="buttons">
-                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
-                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
-                </div>
-            </div>
-            <div class="div-bombeiro">
-                <div class="bombeiroInput">
-                    <label for="rescue4">Combatente 4</label>
-                    <input type="text" name="fire4" id="fire4" class="bombeiro" disabled>
                 </div>
                 <div class="buttons">
                     <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
