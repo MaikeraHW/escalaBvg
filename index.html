@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Escala BVG</title>
+</head>
+<body>
+    <div id="container">
+    <header class="head">
+        <h1 class="main-title">Escala do Plantão</h1>
+        <div class="logo"></div>
+    </header>
+    <form action="POST">
+        <div class="firstPage">
+        <section class="APH">
+            <h2 class="APHTitle">APH</h2>
+        <div class="equipes">
+        <article class="guarnicao">
+            <h3 class="equipeName">Equipe 1</h3>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="condutorS4a">Condutor S4</label>
+                    <input type="text" name="condutorS4a" id="condutorS4a" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button" name="condutorS4a"><ion-icon name="pencil-outline" onclick=enableName()></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="socorristaS1a">Socorrista S1</label>
+                    <input type="text" name="socorristaS1a" id="socorristaS1a" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="socorristaS2a">Socorrista S2</label>
+                    <input type="text" name="socorristaS2a" id="socorristaS2a" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="socorristaS3a">Socorrista S3</label>
+                    <input type="text" name="socorristaS3a" id="socorristaS3a" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+        </article>
+        <article class="guarnicao">
+            <h3 class="equipeName">Equipe 2</h3>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="condutorS4b" id="condutorS4b" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="socorristaS1b" id="socorristaS1b" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="socorristaS2b" id="socorristaS2b" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="socorristaS3b" id="socorristaS3b" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+        </article>
+        <article class="guarnicao">
+            <h3 class="equipeName">Equipe 3</h3>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="condutorS4c" id="condutorS4c" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="socorristaS1c" id="socorristaS1c" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="socorristaS2c" id="socorristaS2c" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="socorristaS3c" id="socorristaS3c" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+        </article>
+        <article class="guarnicao">
+            <h3 class="equipeName">Equipe 4</h3>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="condutorS4d" id="condutorS4d" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="socorristaS1d" id="socorristaS1d" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="socorristaS2d" id="socorristaS2d" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="socorristaS3d" id="socorristaS3d" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+        </article>
+        <article class="guarnicao">
+            <h3 class="equipeName">Equipe 5</h3>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="condutorS4e" id="condutorS4e" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="socorristaS1e" id="socorristaS1e" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="socorristaS2e" id="socorristaS2e" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="socorristaS3e" id="socorristaS3e" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+        </article>
+        </div>
+        </section>
+        <section class="samu">
+            <h1>Samu</h1>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="condsamu">Condutor</label>
+                    <input type="text" name="condsamu" id="condsamu" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button" name="condsamu"><ion-icon name="pencil-outline" onclick=enableName()></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="tecsamu">Técnico(a)</label>
+                    <input type="text" name="tecsamu" id="tecsamu" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <!--- RESGATE / INCÊNDIO-->
+
+        <section class="rescue">
+        <div class="equipes">
+            <h2 class="RescueTitle">Resgate Veicular</h2>
+            <article class="guarnicao-ucir">
+            <h3 class="equipeName-ucir">UCIR</h3>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="rescuecond">Condutor</label>
+                    <input type="text" name="rescuecond" id="rescuecond" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="rescue1">Comando</label>
+                    <input type="text" name="rescue1" id="rescue1" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="rescue2">Regatista 1</label>
+                    <input type="text" name="rescue2" id="rescue2" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="rescue3">Resgatista 2</label>
+                    <input type="text" name="rescue3" id="rescue3" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="rescue4">Logistica</label>
+                    <input type="text" name="rescue4" id="rescue4" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+        </article>
+        <article class="guarnicao-ucir">
+            <h3 class="equipeName-ucir">UR 01</h3>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="ur01s1" id="ur01s1" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="ur01s2" id="ur01s2" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="ur01s3" id="ur01s3" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="ur01s4" id="ur01s4" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="ur01s5" id="ur01s5" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+        </article>
+        <article class="guarnicao-ucir">
+            <h3 class="equipeName-ucir">UR 02</h3>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="ur02s1" id="ur02s1" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="ur02s2" id="ur02s2" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="ur02s3" id="ur02s3" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="ur02s4" id="ur02s4" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <input type="text" name="ur02s5" id="ur02s5" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+        </article>
+        
+        </div>
+        </section>
+
+    
+    <!---INCÊNDIO-->
+
+        <section class="rescue">
+        <div class="equipes">
+            <h2 class="RescueTitle">Combate á incêndio</h2>
+            <article class="guarnicao-ucir">
+            <h3 class="equipeName-ucir">UCI</h3>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="rescuecond">Condutor</label>
+                    <input type="text" name="rescuecond" id="rescuecond" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="rescue1">Combatente 1</label>
+                    <input type="text" name="rescue1" id="rescue1" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="rescue2">Combatente 2</label>
+                    <input type="text" name="rescue2" id="rescue2" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="rescue3">Combatente 3</label>
+                    <input type="text" name="rescue3" id="rescue3" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+            <div class="div-bombeiro">
+                <div class="bombeiroInput">
+                    <label for="rescue4">Combatente 4</label>
+                    <input type="text" name="rescue4" id="rescue4" class="bombeiro" disabled>
+                </div>
+                <div class="buttons">
+                    <button type="button"><ion-icon name="pencil-outline"></ion-icon></button>
+                    <button type='button'><ion-icon name="trash-outline"></ion-icon></button>
+                </div>
+            </div>
+        </article>
+        
+        </div>
+        </section>
+
+
+
+
+    </form>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

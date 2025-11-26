@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ececec;
+    padding: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width: 900px){
+
+
+.firstPage{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 70%;
+    min-width: 990px;
+    border: 1px solid black;
+}
+
+.main-title{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.APH{
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.APHTitle{
+    transform: rotate(-90deg);
+    font-size: 2rem;
+}
+
+.guarnicao{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.5rem;
+    width: fit-content;
+    padding: 0.1rem;
+    margin: 0.2rem;
+}
+
+.equipeName{
+    white-space: nowrap;
+}
+
+.div-bombeiro{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.bombeiro {
+    padding: 0.2rem;
+}
+
+.bombeiroInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.2rem;
+     
+}
+
+.bombeiroInput input{
+    width: 100%;
+    background-color: rgb(201, 201, 201);
+    text-align: center;
+    border-radius: 4px;
+}
+
+.bombeiroInput label{
+    white-space: nowrap;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.2rem;
+    height: fit-content;
+    flex-grow: 1;
+}
+
+.buttons button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+}
+
+.samu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+
+.rescue{
+    border: 1px solid black;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 70%;
+    min-width: 990px;
+}
+
+
+.RescueTitle{
+    text-align: center;
+}
+
+.rescue{
+    margin-top: 1rem;
+}
+
+.guarnicao-ucir{
+    display: flex;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0.4rem;
+}
+
+.equipeName-ucir{
+    flex-shrink: 0;
+    text-align: end;
+    width: 4rem;
+    white-space: nowrap;
+}
+
+}
+
+@media screen and (max-width: 899px){
+
+body{
+    padding: 0;
+}
+#container{
+    max-width: 500px;
+    margin: auto;
+}
+
+.APH{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+.APHTitle{
+    font-size: 2rem;
+}
+    
+
+.guarnicao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    border: 1px solid black;
+    width: fit-content;
+    width: 100%;
+    border: 1px solid orange;
+    padding: 0.5rem;
+    
+}
+
+.equipes{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        padding: 0.5rem;
+}
+
+.div-bombeiro{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.bombeiroInput{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2rem;
+}
+
+.bombeiroInput input{
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0.4rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.2rem;
+    height: fit-content;
+}
+
+.buttons button{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+.rescue{
+    margin-top:  2rem;
+}
+
+}
